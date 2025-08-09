@@ -48,7 +48,7 @@ func TestInitConfig_LoadsDevelopmentConfig(t *testing.T) {
 
 	// Check LLM
 	require.Equal(t, "AIzaSyAd75EAAm70NXIhrUfp8nJNIZKpSZOBX_U", llmCfg.ApiKey)
-	require.Equal(t, "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", llmCfg.BaseURL)
+	require.Equal(t, "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", llmCfg.BaseUrl)
 }
 
 func TestFilenameAndDirname(t *testing.T) {

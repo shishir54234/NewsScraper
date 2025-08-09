@@ -43,7 +43,7 @@ func NewLLMClient(llm_client_config *config.LlmConfig) LLMClient {
 	return &geminiAiClient{
 		client:     new_client,
 		apiKey:     llm_client_config.ApiKey,
-		baseURL:    llm_client_config.BaseURL,
+		baseURL:    llm_client_config.BaseUrl,
 	}
 
 
