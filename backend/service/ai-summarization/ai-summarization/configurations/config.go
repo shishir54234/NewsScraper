@@ -64,7 +64,7 @@ error){
 		return nil ,nil, nil, nil,nil,nil,err
 	}
 	fmt.Println("API_KEY", cfg.Llmconfig.ApiKey)
-	fmt.Println("BASE_URL", cfg.Llmconfig.BaseURL)
+	fmt.Println("BASE_URL", cfg.Llmconfig.BaseUrl)
 	return cfg, cfg.Llmconfig, cfg.Grpc,cfg.Rabbitmq, cfg.Logger, cfg.Jaeger, nil 
 }
 

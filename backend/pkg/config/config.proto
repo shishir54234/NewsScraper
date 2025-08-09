@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package config;
+
+option go_package = ".;config";
+
+message Config {
+  ServerConfig server = 1;
+  DatabaseConfig database = 2;
+  RedisConfig redis = 3;
+  QueueConfig queue = 4;
+  AIConfig ai = 5;
+  LoggingConfig logging = 6;
+}
+
+message ServerConfig {
+  string port = 1;
+  string host = 2;
+  int64 read_timeout = 3;
+  int64 write_timeout = 4;
+}
+
+message DatabaseConfig {
+  string host = 1;
+  int64 port = 2;
+  string username = 3;
+  string password = 4;
+  string db_name = 5;
+  string ssl_mode = 6;
+}
+
+message RedisConfig {
+  string host = 1;
+  int64 port = 2;
+  string password = 3;
+  int64 db = 4;
+}
+
+message QueueConfig {
+  string type = 1;
+  string url = 2;
+  int64 workers = 3;
+}
+
+message AIConfig {
+  string provider = 1;
+  string api_key = 2;
+  string model = 3;
+  string base_url = 4;
+}
+
+message LoggingConfig {
+  string level = 1;
+  string format = 2; // json, text
+}
+
+message LlmConfig {
+    string api_key = 1;
+    string base_url = 2;
+}
