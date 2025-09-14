@@ -27,7 +27,7 @@
   },
     "llmconfig":
     {   
-        "apikey": "AIzaSyAd75EAAm70NXIhrUfp8nJNIZKpSZOBX_U",
+        "apikey": "",
         "baseurl": "https://generativelanguage.googleapis.com"
     },
   "jaeger": {
